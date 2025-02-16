@@ -7,7 +7,7 @@ WORKDIR /app
 # Copy all project files into the container
 COPY . .
 
-# Install FastAPI and Uvicorn directly (since no requirements.txt)
+# Install dependencies
 RUN pip install --no-cache-dir fastapi uvicorn
 
 # Expose the port FastAPI runs on
